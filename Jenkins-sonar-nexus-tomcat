@@ -21,7 +21,7 @@ pipeline{
         }
         stage('Upload War To Nexus'){
             steps{
-                  NexusArtifactUploader Artifacts: [
+                  nexusArtifactUploader artifacts: [
                        [
                             artifactId: 'myweb', 
                             classifier: '', 
